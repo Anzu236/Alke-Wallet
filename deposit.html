@@ -150,7 +150,7 @@
 
                         <!-- Mensajes dinámicos -->
 
-                        <div id="mensajeDeposito"></div>
+                        <div id="mensajeDeposito" aria-live="polite"></div>
 
 
                         <form id="depositForm">
@@ -177,12 +177,13 @@
                                         placeholder="Ej: 50000"
                                         min="1"
                                         step="1"
+                                        aria-describedby="montoHelp"
                                         required
                                     >
 
                                 </div>
 
-                                <div class="form-text">
+                                <div id="montoHelp" class="form-text">
                                     Ingresa un monto mayor a $0.
                                 </div>
 
